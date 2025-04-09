@@ -503,22 +503,22 @@
 # 2 - Crie um programa que use um laço for para somar
 # todos os números de 1 a 100 e exiba o resultado.
 
-x = 1
-y = 0
+# x = 1
+# y = 0
 
-for i in range (1,101):
-    if i <= 100:
-        print(f"{x} + {y} = {x + y}")
-        result = x + y
-        x += 1
-        y = result
+# for i in range (1,101):
+#     if i <= 100:
+#         print(f"{x} + {y} = {x + y}")
+#         result = x + y
+#         x += 1
+#         y = result
       
-soma = 0
+# soma = 0
 
-for i in range(1, 101):
-    soma += i
+# for i in range(1, 101):
+#     soma += i
 
-print(soma)
+# print(soma)
 
 # _________________________________________________
 # 3 - Faça um programa que solicite um número ao usuário e use
@@ -593,17 +593,28 @@ print(soma)
 #         result += 1
 
 # print(f" A palavra que você digitou tem {result} vogais ")
-        
-
-
-#        
+             
 # _______________________________________________________
 
+# Crie um algoritmo que converta uma temperatura de Celsius
+# para Fahrenheit. Solicite ao usuário a temperatura em Celsius
+# e exiba o resultado em Fahrenheit.
 
+# num = float(input("Vamos converter para Fahrenheit, digite: "))
 
+# fahr = (num * 1.8) + 32
 
+# print(fahr)
+#______________________________________________________________
 
+# Desenvolva um programa que peça a idade do usuário e
+# informe se ele é criança, adolescente, adulto ou idoso.
 
+# num = int(input("Digite a sua idade: "))
 
-
-
+# if num <= 11:
+#     print("Você é Crianaça !")
+# elif num <= 18:
+#     print("Você é Adolencente !")
+# else:
+#     print("Você é adulto !")
