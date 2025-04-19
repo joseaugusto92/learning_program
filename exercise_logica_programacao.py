@@ -616,5 +616,121 @@
 #     print("Você é Crianaça !")
 # elif num <= 18:
 #     print("Você é Adolencente !")
+# elif num <= 59:
+#     print("Você é Adulto!!! ")
 # else:
-#     print("Você é adulto !")
+#     print("Você é idoso!!!")
+
+#_____________________________________________________________
+
+
+#Crie um programa em Python que simule um sistema de login. O programa deve permitir ao usuário 
+# três tentativas para acertar o nome de usuário e a senha corretos. Caso o usuário erre as credenciais, 
+# o programa deve fornecer uma mensagem informando quantas tentativas restam. Se o usuário acertar, 
+# uma mensagem de boas-vindas deve ser exibida, e o programa deve terminar imediatamente.
+# Se todas as três tentativas falharem, o programa deve usar um loop for para exibir uma mensagem de 
+# "Acesso bloqueado" repetida três vezes.
+
+# senha = 1478
+# usuario = "chefe"
+# chances = 3
+
+# for i in range (1,4):
+#     login = str(input("Digite o seu usuário: "))
+#     senha2 = int(input("Digite a senha: "))
+#     if login == usuario and senha2 == senha:
+#         print("Acesso LIBERADO BEM VINDO CHEFE!! ")
+#         break
+#     else:
+#         chances -= 1
+#         print(f"Credenciais erradas! Você só tem mais {chances} tentativas")
+#         if chances == 0:
+#             print("Limite de tentativas Excedidas, ACESSO BLOQUEADO")
+#             break
+
+#______________________________________________________________________
+
+
+
+
+# mix = ['jose',67, 'new york', 'fdfdgh', '59', 1500, '36', '#$*&!', 22.69]
+
+# mix.insert(2, 'LOREN') inserir elemento na posição desejada
+# mix.append("CIGARRA!")
+# mix.remove('jose')
+# mix.pop(6)
+
+# print(mix)
+
+ #____________________________________________________________________
+
+
+# lista_bancos = [
+# 'nubank', 'c6 bank', 'banco inter', 'banco original', 
+# 'banco nomad', 'itau', 'bradesco', 'santander', 'banco do brasil',
+# 'banco dacoval', 'banco safra', 'banco pine', 'banco panamericano', 'banco votorantim'
+# ]
+
+
+# lista_bancos[0] = 'JOSE !!!!' dessa forma ele vai mudar o elemento da posição zero.
+
+
+# for i in lista_bancos:
+#     print("[X]", i )
+# ______________________________________________________________________
+
+
+
+# first_tupla = ( 'jose', 'lula', 'bolsonaro', 'pamela')
+
+
+
+# jose, lula, bolsonaro, pamela = first_tupla
+
+# print('elem1:', jose)
+# print('elem2:', lula)
+# print('elem3:', bolsonaro)
+# print('elem4:', pamela)
+
+# ________________________________________________________________________
+# Crie uma tupla para representar as informações de três
+# palestrantes, cada uma contendo o nome, o tema da
+# palestra e a instituição à qual estão vinculados.
+
+# Exiba na tela as informações do terceiro palestrante,
+# incluindo nome, tema da palestra e instituição.
+
+
+
+# palestra_tupla = (
+# ['Jose Augusto', 'FEA USP', 'Mercado Financeiro'], 
+# ['Pamela', 'UNIPAM', 'Estetica'], ['Lorenzo','USP','Matematica']
+# )
+
+# #primeiro palestrante
+# print('Palestrante:', palestra_tupla [0][0])
+# print('Instituição:',palestra_tupla [0][1] )
+# print('Tema:',palestra_tupla [0][2] )
+# print('               ')
+# #terceiro pelstrante
+# print('Palestrante:', palestra_tupla [2][0])
+# print('Instituição:',palestra_tupla [2][1] )
+# print('Tema:',palestra_tupla [2][2] )
+
+# _________________________________________________________
+
+# Crie uma lista contendo seis frutas de sua escolha. Depois de ter a 
+# lista pronta, converta essa lista em uma tupla. Por fim, exiba o conteúdo 
+# da tupla resultante para verificar as frutas que foram armazenadas.
+
+# frutas = ['manga', 'banana', 'abacate', 'laranja', 'uva','melancia']
+
+# fruta_tupla = tuple(frutas)
+
+# print(fruta_tupla)
+
+# ultimo feito 19/04/2024
+
+
+
+
