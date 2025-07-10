@@ -731,6 +731,398 @@
 
 # ultimo feito 19/04/2024
 
+# ________________________________________________________________
+
+# frutas = set()
+
+# fru2={"maça", 'manga'}
+
+# frutas.update(fru2)
+
+# print(frutas)
+
+# print('maça' in frutas)
+
+
+# __________________________________________________________________
+
+# fruts_red = {'morango', 'cereja', 'framboesa'}
+
+# fruts_red.remove('cereja')
+# fruts_red.discard('morango')
+
+# print(fruts_red)
+
+#___________________________________________________________________
+
+# a = {'casa', 'fazenda', 'edificio', 'apartamento'}
+
+# b = {'leide', 'pamela', 'jose', 'lorenzo'}
+
+# c = a|b
+
+# print(c)
+
+# _____________________________________________________________________
+
+# Crie um programa que recebe dois conjuntos e exibe a
+# interseção deles.
+
+# conjunto1 = (input("Digite os elementos do set1 separados por ponto e virgula: "))
+# conjunto2 = (input("Digite os elementos do set2 separados por ponto e virgula: "))
+
+# conj1 = set(i.strip()for i in conjunto1.split(",")) 
+# conj2 = set(i2.strip()for i2 in conjunto2.split(","))
+
+# intersessao = conj2.intersection(conj1)
+ 
+# print(intersessao)
+
+# _________________________________________________________________________
+
+# dicionario = {
+#     'nome': 'Jose Augusto',
+#     'idade': 28 ,
+#     'País' : 'Noruega',
+#     'bancos' : {'clear corretora': 'ações', 'nubank': 'credit card', 'inter':{'ações', 'dolar', 'american stocks'} }
+#     }
+
+# print(dicionario['bancos']['inter'])
+
+#___________________________________________________________________________
+
+# Escreva um programa que EXIBA um dicionário contendo
+# informações de pessoas (nome, idade) e exiba essas
+# informações.
+
+# dados = {
+#     'nome': 'Jose Augusto',
+#     'Idade': 33,
+#     'cidade': 'São Paulo',
+#     'Profissão': 'Cientista de DADOS'
+
+# }
+
+# dados['nome']='Pamela'
+# dados['Idade'] = 32
+# dados['Profissão']= 'Lash Designer'
+
+# for i in dados.items():
+#     print(i)
+# _________________________________________________________________________
+# Crie um dicionário que irá armazenar informações de um contato, 
+# incluindo o nome, o telefone e o email. Peça ao usuário para fornecer 
+# esses dados, solicitando que ele insira o nome do contato, o número de 
+# telefone e o endereço de email. Após coletar todas as informações necessárias, 
+# exiba o conteúdo do dicionário, mostrando todas as informações do 
+# contato inserido pelo usuário.
+
+# nome = input('Insira o seu nome: ')
+# tel = input('Insira o seu tel: ')
+# email = input('Insira o seu e-mail: ')
+
+# dados = {
+#     'nome': '',
+#     'telefone': '',
+#     'email': '',
+# }
+
+# dados['nome']=nome
+# dados['telefone']=tel
+# dados['email']=email
+
+
+# for i in dados.items():
+#     print(i)
+# ___________________________________________________________
+
+# # Versão 2 - após estudar um pouco mais
+
+# dados = dict ()
+
+# dados['nome'] = input("Digite o nome do contato: ")
+# dados['telefone'] = input("Digite o telefone do contato: ")
+# dados['email'] = input("Digite o email do contato: ")
+
+
+# print (dados)
+# _______________________________________________________________________
+
+
+# for i in range (1, 5):
+#     print (f'começando {i} Loop')
+
+#     for y in range (5):
+#         print (f'{i}º loop completo')
+
+
+# ________________________________________________________________________
+
+# produto = input('Insira uma palavra: ')
+
+
+# for i in range (1,6):
+#     print(f' loop {i} iniciando')
+
+#     for i in range(3):
+#         print(f'Loop {i} dentro do loop comçando')
+#         for i in produto:
+#             print(i)
+    
+
+
+# print('LOOP FINALIZADO')
+
+# _________________________________________________________
+
+# for i in range (1,21):
+#      for i1 in range (1,11):
+#          resu = i*i1
+#          print(f'{i}x{i1}={resu}')
+         
+#          if i1 == 10:
+#               i3 = i + 1
+#               print(f'Agora vamos para tabuada do {i3}!')
+
+# ___________________________________________________________
+        
+
+
+# def somar (a, b):
+#     resu = a + b
+#     return resu
+
+# num1= 5
+# num2= 11
+# print(somar(num1, num2))
+
+# def saudacao (nome):
+#     print(f'Olá {nome}')
+
+# nome = 'Pamela'
+
+# saudacao(nome)
+
+# def saudacao (nome, sobnome):
+#     print(f'Olá {nome} {sobnome}')
+
+# saudacao('Pamela', 'Souza')
+
+
+# def saudacao (nome):
+#     return f'Olá {nome}'
+
+# nome = "Jose"
+# print(saudacao(nome))
+
+# def nome_compl(nome, sobnome):
+#     return f'{nome} {sobnome}'
+
+
+# apresentacao = f'Ola meu {nome_compl('Jose Augusto', 'Batista')} e tenho 33 anos'
+
+# print(apresentacao)
+
+
+# Crie uma função que receba um horário e imprima
+# "Bom dia!","Boa tarde!" o "Boa noite!" conforme o horário.
+
+# def saudacao (horario):
+#     if int(horario) <= 13:
+#         print('Bom dia!!!')
+#     elif horario > 13 and horario <= 18:
+#         print('Boa tarde')
+#     elif horario > 18 and horario <= 23:
+#         print('Boa Noite !!')
+
+
+# while True:
+#     hora = input('Digite a hora agora ou digite exit para sair: ')
+#     if hora == 'exit':
+#         print('BYEEEEE !')
+#         break
+#     else:
+#         saudacao(hora)
+
+# def saudacao (horario):
+#     if 0 <= horario <= 12:
+#         return 'Bom Dia!!!'
+#     if 13 <= horario <= 18:
+#         return 'Boa Tarde!!!'
+#     if 19 <= horario <= 23:
+#         return 'Boa Noite!!!'
+#     else:
+#         return'Hora inválida !'
+
+
+# while True:
+#     entrada = input('Digite a hora agora ou digite exit para sair: ')
+
+#     if entrada.lower() == 'exit':
+#         print('BYEEEEE !')
+#         break
+
+#     if not entrada.isdigit():
+#         print("Por favor, digite um número válido")
+#         continue
+#     hora = int(entrada)
+#     if hora > 23 or hora < 0:
+#         print(' hora fora do existente, digite somente de 0 a 23')
+#         continue
+#     print(saudacao(hora))
+
+
+    
+
+# _____________________________________
+
+# def remover_ultima_letra(*args):
+#     for palavra in args:
+#         print(palavra[0:-1])
+
+# print(remover_ultima_letra
+#       ("Teste", "Contexto", "Palavras", "Frase", "Argumento", "Ola"))
+
+
+# def saudacao (horario):
+#     if 0 <= horario <= 12:
+#         return 'Bom dia !!' 
+#     elif 13 <= horario <= 18:
+#         return 'Bom tarde !!'
+#     elif 19 <= horario <= 23:
+#         return 'Boa noite !!'
+#     else:
+#         return 'Digite um numero VÁLIDO!! '
+
+# while True:
+#     entrada = input ('Insira um horario para receber Cumprimento: ')
+
+#     if entrada.lower() == 'exit':
+#         print('BYEEEE')
+#         break
+#     if not entrada.isdigit:
+#         print("Digite numero válido")
+#     hora = int(entrada)
+#     if 0 > hora or hora > 23:
+#         print(' Digite um valor de 0 a 23')
+#     print(saudacao(hora))
+
+# _____________________________________________________________
+
+# def somar (a, b):
+#     return a + b
+
+
+# num = int(input('Insira o 1º numero'))
+# num2 = int(input('Insira o 2º numero para somar'))
+
+
+# print(somar(num, num2))
+
+# _______________________________________________________________
+
+# def somar (a, b):
+#     return a + b
+
+# def sub (a, b):
+#     return a - b
+
+# def mult (a, b):
+#     return a * b
+
+# def div (a, b):
+#     return a / b
+
+
+# while True:
+#     num = int(input('Insira o 1º numero: '))
+#     num2 = int(input('Insira o 2º numero: '))
+#     sinal = int(input('digite 1 somar, 2 subtrair, 3 multiplicar, 4 dividir ou 5 sair: '))
+#     if sinal == 1:
+#         print(somar(num, num2))
+#     if sinal == 2:
+#         print(sub(num, num2))
+#     if sinal == 3:
+#         print(mult(num, num2))
+#     if sinal == 4:
+#         print(div(num, num2))
+#     if sinal == 5:
+#         print ('Saiu BYEE')
+#         break
+# ________________________________________________________
+
+
+# def media (a, b, c):
+#     d = a + b + c
+#     return d / 3
+
+
+# n1 = 10
+# n2 = 10
+# n3 = 8
+
+# print(media(n1, n2, n3))
+
+# ___________________________________________________________
+
+# 09/07/2025
+
+# REVISÃO LOGICA DE PROGRAMAÇÃO
+
+# Desenvolva um algoritmo que calcule o preço de um produto
+# após aplicar um desconto. Solicite o preço original e o percentual
+# de desconto.
+
+
+# contagem = 0
+
+# while True:
+    
+#     produto = int(input("Digite o Valor do produto R$: "))
+#     desc1 = int(input("Digite o desconto em %: "))
+
+#     desconto = produto * (desc1/100)
+
+#     valor= produto - desconto
+
+#     print(f"O valor do produto é {produto} e desconto sendo de {desc1}%, então valor do produto será R${valor}")
+#     contagem += 1 
+
+#     if contagem >= 10:
+#         break
+
+# _________________________________________________________
+# Algoritmo de Conversão de Tempo:
+# Desenvolva um algoritmo que converta uma quantidade de
+# segundos fornecida pelo usuário em horas, minutos e segundos.
+
+
+# while True:
+#     print('Vamos converter')
+#     segundos=int(input("Digite uma quantide de segundos maior que 3600: "))
+#     horas = segundos//3600
+#     resto = segundos%3600
+#     minuto = segundos//60
+#     segundoss = minuto % 60
+
+#     print(f'Em horas = {horas}h{minuto}min{segundoss}s')
+    
+
+
+#     contin= input('Deseja continuar? S ou N: ')
+
+#     if contin.lower() != 's': 
+#         break
+
+
+# arrumar aqui
+
+
+
+
+# _________________________________________________________________
+
+
 
 
 
