@@ -1,3 +1,7 @@
+
+# Aqui é um algoritimo que diz se o usuário pode dirigir ou não de acordo com a 
+#idade que ele põe
+
 # idade = int(input("DIGITE A SUA IDADE: "))
 
 
@@ -51,7 +55,32 @@
 # valorfinal = precoproduto - desconto
 
 # print("DESCONTO DO SEU PRODUTO É: ", desconto , "Valor final é: ", valorfinal)
+ 
+###
 
+# Aqui é um laço de repetição, onde o usuário calculo desconto em % de um produto. 
+
+# while True:
+#     precoproduto = float(input("Insira o preço do produto: "))
+
+#     desconto = int(input('Insira o desconto em %: '))
+
+#     valor_desc = (desconto / 100) * precoproduto
+
+#     valor_final = precoproduto - valor_desc
+
+#     print (f' O valor do produto sendo {precoproduto} com de desconto de {desconto}% terá um valor final de {valor_final}')
+
+#     opção = int(input('Escolha uma opção 1 para ficar ou 2 para sair: '))
+
+#     if opção == 1:
+#         print('    Continue    ')
+#     elif opção == 2:
+#         print ('     Saiu !   ')
+#         break
+
+
+    
 # ____________________________________________________________________
 
 
@@ -88,6 +117,8 @@
 
 # _________________________________________________________________________
 
+# Aqui informa se na frase tem letra B maiuscula true ou false
+
 # frase = str(input("Escreva uma FRASE qualquer: "))
 
 # word1 = 'b'
@@ -97,6 +128,7 @@
 # else:
 #     print("Sua frase não tem Letra B")
 
+##
 
 # num = 21
 
@@ -104,6 +136,20 @@
 #     print("o numero é maior que 20")
 # elif num > 10:
 #     print("O numero é maior que 10")
+
+##
+
+# Verifica se a frase contém a letra 'b' ou 'B'
+# e informa ao usuário a quantidade encontrada
+
+# frase = str(input("    Escreva uma frase: "))
+
+# wordb = frase.lower().count('b')
+
+# print(f'    Na sua frase tem {wordb} letras B   ')
+
+
+
 
 # __________________________________________________________
 
@@ -1097,30 +1143,55 @@
 # segundos fornecida pelo usuário em horas, minutos e segundos.
 
 
-# while True:
-#     print('Vamos converter')
-#     segundos=int(input("Digite uma quantide de segundos maior que 3600: "))
-#     horas = segundos//3600
-#     resto = segundos%3600
-#     minuto = segundos//60
-#     segundoss = minuto % 60
+while True:
 
-#     print(f'Em horas = {horas}h{minuto}min{segundoss}s')
+    print('Vamos converter')
+    segundos=int(input("Digite uma quantide de segundos maior que 3600: "))
+
+    horas = segundos//3600
+
+    minuto = (segundos % 3600) // 60
+
+    segundos2 = segundos % 60
+
+    print(f' {segundos} Em horas = {horas} h {minuto} min {segundos2}s')
     
 
 
-#     contin= input('Deseja continuar? S ou N: ')
+    contin= input('Deseja continuar? S ou N: ')
 
-#     if contin.lower() != 's': 
-#         break
-
-
-# arrumar aqui
-
-
+    if contin.lower() != 's': 
+        break
 
 
 # _________________________________________________________________
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
