@@ -1225,10 +1225,77 @@
 
 # ______________________________________________________________
 
+# ultima atualização 10/08
+
+
+# Crie uma função que receba um horário e imprima "Bom dia!" , 
+# "Boa tarde!" ou "Boa noite!" conforme o horário.
+
+
+# def cumpri (a, b):
+#     if a >= 12 and a <= 18:
+#        print('Boa tarde !!!!')
+#     elif a >= 19 and a <= 23 and b <= 59:
+#        print ('Boa noite!!')
+#     else:
+#        print ('Bom dia !!')
 
 
 
+# cumpri(10,59)
 
+
+
+# Crie uma calculadora com opções de soma, multiplicação, 
+# subtração, divisão e sair. (Ela deverá funcionar infinitamente, 
+# até que o usuário decida sair da calculadora.)    
+
+def som (a,b):
+    somar = a + b
+    return somar
+
+
+def multi (a,b):
+    multi = a * b
+    return multi
+
+def subtra (a,b):
+    sub = a - b
+    return sub
+
+def div (a,b):
+    divs = a / b
+    return divs
+
+while True:
+    calculo = int(input('\nDigite 1 para somar, 2 multiplicar, 3 subtrair, 4 dividir: '))
+    print()
+    if calculo == 1:
+        num1 = int (input( 'Digite um numero:'))
+        print ()
+        num2 = int (input('Digite outro:  '))
+        print(som(num1, num2))
+    elif calculo == 2:
+        num1 = int (input( 'Digite um numero:'))
+        print ()
+        num2 = int (input('Digite outro:  '))
+        print(multi(num1, num2))
+    elif calculo == 3:
+        num1 = int (input( 'Digite um numero:'))
+        print ()
+        num2 = int (input('Digite outro:  '))
+        print(subtra(num1, num2))
+    elif calculo == 4:
+        num1 = int (input( 'Digite um numero:'))
+        print ()
+        num2 = int (input('\nDigite outro:  '))
+        print(div(num1, num2))
+    
+    opcao = str(input(' \nDeseja fazer mais uma conta?  '))
+    if opcao == 'sim':
+        continue
+    elif opcao == 'nao':
+        break
 
 
 
