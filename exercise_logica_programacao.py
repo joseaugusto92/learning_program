@@ -1191,17 +1191,17 @@
 # Crie um conjunto vazio chamado frutas e adicione as seguintes frutas a ele: 
 # " maçã" , "banana " , " uva " , "laranja " e " morango ". Em seguida, imprima o conjunto.
 
-frutas = []
+# frutas = []
 
-print('antes')
+# print('antes')
 
-print('lista:',frutas)
-print()
-frutas.extend(["Maçã", "banana", 'uva','laranja', 'morango'] )
+# print('lista:',frutas)
+# print()
+# frutas.extend(["Maçã", "banana", 'uva','laranja', 'morango'] )
 
-print('depois')
-print('lista:',frutas)
-print()
+# print('depois')
+# print('lista:',frutas)
+# print()
 
 
 #______________________________________________________________________
@@ -1210,18 +1210,18 @@ print()
 # conjunto frutas e imprima o resultado.
 
 
-saber = "banana" in frutas
+# saber = "banana" in frutas
 
-print(saber)
+# print(saber)
 
-# Remova a fruta " uva " do conjunto frutas_
-# vermelhas e imprima o conjunto atualizado.
+# # Remova a fruta " uva " do conjunto frutas_
+# # vermelhas e imprima o conjunto atualizado.
 
-frutas.remove('uva')
-print()
+# frutas.remove('uva')
+# print()
 
-print('lista depois de removido')
-print(frutas)
+# print('lista depois de removido')
+# print(frutas)
 
 # ______________________________________________________________
 
