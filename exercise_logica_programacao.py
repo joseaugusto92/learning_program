@@ -1250,52 +1250,144 @@
 # subtração, divisão e sair. (Ela deverá funcionar infinitamente, 
 # até que o usuário decida sair da calculadora.)    
 
-def som (a,b):
-    somar = a + b
-    return somar
+# def som (a,b):
+#     somar = a + b
+#     return somar
 
 
-def multi (a,b):
-    multi = a * b
-    return multi
+# def multi (a,b):
+#     multi = a * b
+#     return multi
 
-def subtra (a,b):
-    sub = a - b
-    return sub
+# def subtra (a,b):
+#     sub = a - b
+#     return sub
 
-def div (a,b):
-    divs = a / b
-    return divs
+# def div (a,b):
+#     divs = a / b
+#     return divs
 
-while True:
-    calculo = int(input('\nDigite 1 para somar, 2 multiplicar, 3 subtrair, 4 dividir: '))
-    print()
-    if calculo == 1:
-        num1 = int (input( 'Digite um numero:'))
-        print ()
-        num2 = int (input('Digite outro:  '))
-        print(som(num1, num2))
-    elif calculo == 2:
-        num1 = int (input( 'Digite um numero:'))
-        print ()
-        num2 = int (input('Digite outro:  '))
-        print(multi(num1, num2))
-    elif calculo == 3:
-        num1 = int (input( 'Digite um numero:'))
-        print ()
-        num2 = int (input('Digite outro:  '))
-        print(subtra(num1, num2))
-    elif calculo == 4:
-        num1 = int (input( 'Digite um numero:'))
-        print ()
-        num2 = int (input('\nDigite outro:  '))
-        print(div(num1, num2))
+# while True:
+#     calculo = int(input('\nDigite 1 para somar, 2 multiplicar, 3 subtrair, 4 dividir: '))
+#     print()
+#     if calculo == 1:
+#         num1 = int (input( 'Digite um numero:'))
+#         print ()
+#         num2 = int (input('Digite outro:  '))
+#         print(som(num1, num2))
+#     elif calculo == 2:
+#         num1 = int (input( 'Digite um numero:'))
+#         print ()
+#         num2 = int (input('Digite outro:  '))
+#         print(multi(num1, num2))
+#     elif calculo == 3:
+#         num1 = int (input( 'Digite um numero:'))
+#         print ()
+#         num2 = int (input('Digite outro:  '))
+#         print(subtra(num1, num2))
+#     elif calculo == 4:
+#         num1 = int (input( 'Digite um numero:'))
+#         print ()
+#         num2 = int (input('\nDigite outro:  '))
+#         print(div(num1, num2))
     
-    opcao = str(input(' \nDeseja fazer mais uma conta?  '))
-    if opcao == 'sim':
-        continue
-    elif opcao == 'nao':
-        break
+#     opcao = str(input(' \nDeseja fazer mais uma conta?  '))
+#     if opcao == 'sim':
+#         continue
+#     elif opcao == 'nao':
+#         break
+
+# Crie um programa que solicita ao usuário que insira três notas e, em seguida, 
+# calcule a média dessas notas usando uma função. A função deve receber as três notas como 
+# argumentos e retornar a média. Por fim, o programa deve imprimir a média calculada.
+
+
+# def media (a, b, c):
+#     soma = a + b + c
+#     media = soma / 3
+#     return media
+
+
+# nota1 = float(input('\nInsira a nota 1: '))
+# nota2 = float(input('\nInsira a nota 2: '))
+# nota3 = float(input('\nInsira a nota 3: '))
+
+# media1 = media(nota1, nota2, nota3)
+
+# print(f"\nA média das notas inseridas é {media1}")
+
+# Crie um programa que define uma função  calcular_area_retangulo que recebe dois argumentos, 
+# comprimento e largura de um retângulo, e retorna a área desse retângulo. Em seguida, o programa 
+# deve solicitar ao usuário que insira o comprimento e a  largura e imprimir a área calculada.
+
+# def area(a, l):
+#     area = a * l
+#     return area
+
+# altura = float(input('\nVamos calcular area de retângulo, digite a altura: '))
+# largura = float(input('\nDigite a lagura: '))
+
+# are = area(altura, largura)
+
+# print(f'\nA area do retangulo é {are}')
+
+
+# Aprendendo sobre *args e **kwargs
+
+
+# def minha_soma(num1, *args):
+#     resultado = num1
+#     for x in args:
+#         resultado += x
+#     print (resultado)
+
+# minha_soma (1, 2, 3,6,7,8)
+
+
+
+# def mostrar (**kwargs):
+#     for chave, valor in kwargs.items():
+#         print(f"{chave}: {valor}")
+
+
+# mostrar(nome='João', idade= 30, cidade="são p")
+
+
+
+# def minha_fun(*arg, **kwargs):
+#     print(arg)
+#     for i in arg:
+#         print(i)
+#     print(kwargs)
+#     for chave, valor in kwargs.items():
+#         print(chave, valor)
+
+
+
+# minha_fun('Curriculo', 'Desenvolvedor', nome="Jose", idade=33)
+
+
+#O que é função lambda?
+
+# valor = 150
+
+# calc_impost = lambda x : x * 3
+
+# print(calc_impost(valor))
+
+
+# precos = [100, 200, 300]
+
+# multpor2 = list(map(lambda x:x *2, precos))
+
+# print(multpor2)
+
+
+# par_impar = lambda x : 'Par' if x % 2 == 0 else "impar"
+
+# print()
+# print(par_impar(8))
+
 
 
 
